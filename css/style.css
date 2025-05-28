@@ -31,13 +31,8 @@ body {
 
 .title {
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding-top: 50px;
   padding-bottom: 30px;
 }
@@ -78,22 +73,15 @@ body {
 }
 
 .button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   background: #f7f3e9;
   border: 1px solid #4b372c;
   padding: 10px 20px;
   color: #4b372c;
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
+  transition-duration: 0.2s;
   border-radius: 3px;
 }
 .button:hover {
@@ -132,15 +120,9 @@ body {
 }
 
 .header__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 15px 20px;
 }
 @media screen and (min-width: 768px) {
@@ -158,7 +140,6 @@ body {
 }
 .header__title:hover {
   opacity: 0.6;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -167,8 +148,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .header__nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 30px;
   }
@@ -185,7 +164,6 @@ body {
   bottom: 0;
   left: 0;
   background-color: #4b372c;
-  -webkit-transition: width 0.3s ease-in-out;
   transition: width 0.3s ease-in-out;
 }
 .header__link:hover::before {
@@ -203,16 +181,14 @@ body {
   }
 }
 .header__open.is-checked .drawer-icon__bar:nth-of-type(1) {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   top: 10px;
 }
 .header__open.is-checked .drawer-icon__bar:nth-of-type(2) {
   display: none;
 }
 .header__open.is-checked .drawer-icon__bar:nth-of-type(3) {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   top: 10px;
 }
 
@@ -222,10 +198,7 @@ body {
   right: 0;
   width: 30px;
   height: 2px;
-  -webkit-transition: top 0.3s linear, -webkit-transform 0.3s linear;
-  transition: top 0.3s linear, -webkit-transform 0.3s linear;
   transition: transform 0.3s linear, top 0.3s linear;
-  transition: transform 0.3s linear, top 0.3s linear, -webkit-transform 0.3s linear;
   background-color: #4b372c;
   border-radius: 10px;
 }
@@ -245,26 +218,16 @@ body {
   z-index: 90;
   background: #4b372c;
   padding: 70px 15px;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  -webkit-transition: -webkit-transform 0.3s linear;
-  transition: -webkit-transform 0.3s linear;
+  transform: translateX(100%);
   transition: transform 0.3s linear;
-  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
 }
 .drawer.is-checked {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
 }
 
 .drawer__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .drawer__link {
@@ -284,7 +247,6 @@ body {
   bottom: 0;
   right: 0;
   background-color: #fff;
-  -webkit-transition: width 0.3s ease-in-out;
   transition: width 0.3s ease-in-out;
 }
 .drawer__link:hover::before {
@@ -294,17 +256,12 @@ body {
 .fv {
   position: relative;
   width: 100%;
-  height: 70vh; /* 画面の50%の高さ */
+  height: 70vh;
+  /* 画面の50%の高さ */
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .fv__img {
@@ -326,35 +283,20 @@ body {
 }
 
 .concept__texts {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 10px;
 }
 
 .concept__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 @media screen and (min-width: 768px) {
   .concept__box {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     gap: 100px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
 }
 
@@ -369,110 +311,11 @@ body {
   }
 }
 
-.menu__boxes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 30px;
-}
-@media screen and (min-width: 768px) {
-  .menu__boxes {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    gap: 40px;
-  }
-}
-
-.menu__box1 {
-  position: relative;
-}
-
-.menu__box-img {
-  overflow: hidden;
-}
-.menu__box-img img {
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-.menu__box-img img:hover {
-  -webkit-transform: scale(1.2, 1.2);
-          transform: scale(1.2, 1.2);
-}
-
-.menu__box-name {
-  position: absolute;
-  bottom: 20px;
-  left: 15px;
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 400;
-}
-@media screen and (min-width: 768px) {
-  .menu__box-name {
-    bottom: 50px;
-    left: 30px;
-    font-size: 16px;
-  }
-}
-
-.menu__box2 {
-  position: relative;
-}
-
-.menu__box-img {
-  overflow: hidden;
-}
-.menu__box-img img {
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-.menu__box-img img:hover {
-  -webkit-transform: scale(1.2, 1.2);
-          transform: scale(1.2, 1.2);
-}
-
-.contact {
-  margin-top: 40px;
-  background: url(../img/gift_img.jpg) center center no-repeat;
-  background-size: cover;
-  text-align: center;
-  color: #fff;
-  padding-top: 150px;
-  padding-bottom: 200px;
-}
-@media screen and (min-width: 768px) {
-  .contact {
-    margin-top: 100px;
-  }
-}
-
-.contact__title {
-  margin-bottom: 10px;
-}
-@media screen and (min-width: 768px) {
-  .contact__title {
-    margin-bottom: 15px;
-  }
-}
-
-.contact__text {
-  margin-bottom: 40px;
-}
-@media screen and (min-width: 768px) {
-  .contact__text {
-    font-size: 16px;
-    margin-bottom: 50px;
-  }
-}
-
 .swiper {
-  width: 90%; /* 画面の幅に合わせる */
-  max-width: 1200px; /* 最大幅を調整 */
+  width: 90%;
+  /* 画面の幅に合わせる */
+  max-width: 1200px;
+  /* 最大幅を調整 */
   height: auto;
   margin: auto;
   position: relative;
@@ -487,27 +330,17 @@ body {
 }
 
 .swiper-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   height: 100%;
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
   transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out; /* スムーズなアニメーション */
+  /* スムーズなアニメーション */
   overflow: hidden;
 }
 
@@ -545,29 +378,21 @@ body {
   border-radius: 12px;
   background-color: #fff;
   text-align: center;
-  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .features .feature__number {
   position: absolute;
   top: -20px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 44px;
   height: 44px;
   background-color: #fff;
   border: 2px solid #4b372c;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -604,6 +429,130 @@ body {
   color: #4b372c;
 }
 
+.menu__pdf {
+  padding-bottom: 20px;
+}
+.menu__pdf a:hover {
+  color: rgba(75, 55, 44, 0.5);
+}
+
+.menu__boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .menu__boxes {
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: stretch;
+  }
+}
+
+.menu__box1,
+.menu__box2 {
+  position: relative;
+  flex: 1;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.menu__box-img {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+.menu__box-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.4s;
+}
+.menu__box-img img:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.menu__box-name {
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 40px;
+}
+@media screen and (min-width: 768px) {
+  .menu__box-name {
+    bottom: 30px;
+    left: 25px;
+  }
+}
+
+.contact {
+  margin-top: 40px;
+  background: url(../img/gift_img.jpg) center center no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 150px;
+  padding-bottom: 200px;
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    margin-top: 100px;
+  }
+}
+
+.contact__title {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .contact__title {
+    margin-bottom: 15px;
+  }
+}
+
+.contact__text {
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .contact__text {
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+}
+
+.sns {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.sns__logo {
+  display: inline-block;
+  width: 20px;
+  /* ロゴのサイズを指定 */
+  height: 20px;
+  margin-left: 10px;
+  /* テキストとロゴの間に余白を追加 */
+  background-image: url(../img/logo_insta2.png);
+  /* 通常時のロゴ */
+  background-size: cover;
+}
+
+.sns__button {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+.sns__button:hover .sns__logo {
+  background-image: url(../img/logo_insta2.png);
+  transition-duration: 0.2s;
+  /* ホバー時にロゴが変更 */
+}
+
 .footer {
   color: #4b372c;
   background-color: #f7f3e9;
@@ -628,14 +577,28 @@ body {
 }
 
 .footer__texts {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  max-width: 325px;
+  margin: 0 auto;
+  padding-bottom: 40px;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 7px;
+}
+
+.time__title {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .time__title {
+    font-size: 20px;
+  }
+}
+
+.footer__text {
+  text-align: left;
 }
 
 .time__title {
@@ -649,81 +612,9 @@ body {
 }
 
 .footer__detail {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 25px;
-}
-
-.map {
-  margin-bottom: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 7px;
-}
-.map iframe {
-  margin-top: 25px;
-  width: 100%;
-  height: 300px;
-  border-radius: 8px;
-  border: none;
-}
-
-.map__title {
-  font-size: 16px;
-  font-weight: 600;
-}
-@media screen and (min-width: 768px) {
-  .map__title {
-    font-size: 20px;
-  }
-}
-
-.map__text1 {
-  font-size: 16px;
-}
-@media screen and (min-width: 768px) {
-  .map__text1 {
-    font-size: 18px;
-  }
-}
-
-.sns {
-  margin-top: 30px;
-  margin-bottom: 40px;
-}
-
-.sns__logo {
-  display: inline-block;
-  width: 20px; /* ロゴのサイズを指定 */
-  height: 20px;
-  margin-left: 10px; /* テキストとロゴの間に余白を追加 */
-  background-image: url(../img/logo_insta2.png); /* 通常時のロゴ */
-  background-size: cover;
-}
-
-.sns__button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
-}
-.sns__button:hover .sns__logo {
-  background-image: url(../img/logo_insta2.png);
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s; /* ホバー時にロゴが変更 */
 }
 
 .footer__copyright {
@@ -734,4 +625,4 @@ body {
   .footer__copyright {
     padding: 15px;
   }
-}
+}/*# sourceMappingURL=style.css.map */

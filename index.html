@@ -1,246 +1,237 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chez Nagisa</title>
 
-    <meta name="description" content="東京駅から徒歩10分の小さなカフェ" />
-    <meta name="robots" content="noindex" />
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Chez Nagisa</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
-      rel="stylesheet"
-    />
+	<meta name="description" content="東京駅から徒歩10分の小さなカフェ" />
+	<meta name="robots" content="noindex" />
 
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/lib/animate.css" />
-    <link rel="stylesheet" href="./css/lib/swiper-bundle.min.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__inner">
-        <div class="header__title">Chez Nagisa</div>
-        <nav class="header__nav">
-          <a href="#concept" class="header__link">コンセプト</a>
-          <a href="#features" class="header__link">こだわり</a>
-          <a href="#menu" class="header__link">今週のメニュー</a>
-          <a href="#contact" class="header__link">お問い合わせ</a>
-          <a href="#footer" class="header__link">アクセス・営業時間</a>
-        </nav>
-        <button id="js-header-open" class="header__open">
-          <span class="drawer-icon__bar"></span>
-          <span class="drawer-icon__bar"></span>
-          <span class="drawer-icon__bar"></span>
-        </button>
-      </div>
-    </header>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+		rel="stylesheet" />
 
-    <div id="js-drawer" class="drawer">
-      <nav class="drawer__menu">
-        <a href="#concept" class="drawer__link">コンセプト</a>
-        <a href="#features" class="drawer__link">こだわり</a>
-        <a href="#menu" class="drawer__link">今週のメニュー</a>
-        <a href="#contact" class="drawer__link">お問い合わせ</a>
-        <a href="#footer" class="drawer__link">アクセス・営業時間</a>
-      </nav>
-    </div>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/style.css" />
+	<link rel="stylesheet" href="./css/lib/animate.css" />
+	<link rel="stylesheet" href="./css/lib/swiper-bundle.min.css" />
+</head>
 
-    <section class="fv">
-      <img class="fv__img" src="./img/fv_img.jpg" alt="" />
-    </section>
+<body>
+	<header class="header">
+		<div class="header__inner">
+			<div class="header__title">Chez Nagisa</div>
+			<nav class="header__nav">
+				<a href="#concept" class="header__link">コンセプト</a>
+				<a href="#features" class="header__link">こだわり</a>
+				<a href="#menu" class="header__link">メニュー</a>
+				<a href="#contact" class="header__link">お問い合わせ</a>
+				<a href="#footer" class="header__link">スケジュール</a>
+			</nav>
+			<button id="js-header-open" class="header__open">
+				<span class="drawer-icon__bar"></span>
+				<span class="drawer-icon__bar"></span>
+				<span class="drawer-icon__bar"></span>
+			</button>
+		</div>
+	</header>
 
-    <section id="concept" class="concept">
-      <div class="concept__inner inner">
-        <div class="concept__title title wow fadeInUp">
-          <span class="concept__title-en title-en">Concept</span>
-          <span class="concept__title-ja title-ja">ー コンセプト ー</span>
-        </div>
-        <div class="concept__box">
-          <div class="concept__img">
-            <img src="./img/concept_img.jpg" alt="Concept" />
-          </div>
-          <div class="concept__content">
-            <div class="concept__texts">
-              <p class="concept__text1">
-                Chez Nagisa（シェ・ナギサ）は、<br
-                  class="sp-only"
-                />「Nagisaの家」という意味の小さなカフェです。
-              </p>
-              <p class="concept__text2">
-                身体にやさしい素材を選び、余計なものは加えず、<br />ひとつひとつ丁寧にスイーツを手作りしています。
-              </p>
-              <p class="concept__text3">
-                現在は、不定期でカフェ営業やイベント開催をしています。
-              </p>
-              <p class="concept__text4">
-                1人でも、お友達とでも、<br
-                  class="sp-only"
-                />日々の疲れをそっと癒やしにいらしてください。
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+	<div id="js-drawer" class="drawer">
+		<nav class="drawer__menu">
+			<a href="#concept" class="drawer__link">コンセプト</a>
+			<a href="#features" class="drawer__link">こだわり</a>
+			<a href="#menu" class="drawer__link">メニュー</a>
+			<a href="#contact" class="drawer__link">お問い合わせ</a>
+			<a href="#footer" class="drawer__link">スケジュール</a>
+		</nav>
+	</div>
 
-    <!-- Slider main container -->
-    <div class="swiper">
-      <!-- <div class="swiper__title title wow fadeInUp">
+	<section class="fv">
+		<img class="fv__img" src="./img/fv_img.jpg" alt="" />
+	</section>
+
+	<section id="concept" class="concept">
+		<div class="concept__inner inner">
+			<div class="concept__title title wow fadeInUp">
+				<span class="concept__title-en title-en">Concept</span>
+				<span class="concept__title-ja title-ja">ー コンセプト ー</span>
+			</div>
+			<div class="concept__box">
+				<div class="concept__img">
+					<img src="./img/concept_img.jpg" alt="Concept" />
+				</div>
+				<div class="concept__content">
+					<div class="concept__texts">
+						<p class="concept__text1">
+							Chez Nagisa（シェ・ナギサ）は、<br class="sp-only" />「Nagisaの家」という意味の小さなカフェです。
+						</p>
+						<p class="concept__text2">
+							身体にやさしい素材を選び、余計なものは加えず、<br />ひとつひとつ丁寧にスイーツを手作りしています。
+						</p>
+						<p class="concept__text3">
+							現在は、不定期でカフェ営業やイベント開催をしています。
+						</p>
+						<p class="concept__text4">
+							1人でも、お友達とでも、<br class="sp-only" />日々の疲れをそっと癒やしにいらしてください。
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Slider main container -->
+	<div class="swiper">
+		<!-- <div class="swiper__title title wow fadeInUp">
         <div id="menu" class="swiper__title-en title-en">Menu</div>
         <div class="swiper__title-ja title-ja">メニューは週替わりです</div>
       </div> -->
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <img src="./img/products_strawberry tarte.jpg" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./img/products_matcha cheesecake.jpg" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./img/products_carrotcake.jpg" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./img/products_cocoamuffin.jpg" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./img/products_heartcookie.jpg" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./img/products_butterfigcake.JPG" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./img/products_strawberry tarte.jpg" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./img/products_matcha cheesecake.jpg" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./img/products_carrotcake.jpg" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./img/products_cocoamuffin.jpg" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./img/products_heartcookie.jpg" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./img/products_butterfigcake.JPG" alt="" />
-        </div>
-      </div>
-    </div>
+		<!-- Additional required wrapper -->
+		<div class="swiper-wrapper">
+			<!-- Slides -->
+			<div class="swiper-slide">
+				<img src="./img/products_strawberry tarte.jpg" alt="" />
+			</div>
+			<div class="swiper-slide">
+				<img src="./img/products_matcha cheesecake.jpg" alt="" />
+			</div>
+			<div class="swiper-slide">
+				<img src="./img/products_carrotcake.jpg" alt="" />
+			</div>
+			<div class="swiper-slide">
+				<img src="./img/products_cocoamuffin.jpg" alt="" />
+			</div>
+			<div class="swiper-slide">
+				<img src="./img/products_heartcookie.jpg" alt="" />
+			</div>
+			<div class="swiper-slide">
+				<img src="./img/products_butterfigcake.JPG" alt="" />
+			</div>
+			<div class="swiper-slide">
+				<img src="./img/products_strawberry tarte.jpg" alt="" />
+			</div>
+			<div class="swiper-slide">
+				<img src="./img/products_matcha cheesecake.jpg" alt="" />
+			</div>
+			<div class="swiper-slide">
+				<img src="./img/products_carrotcake.jpg" alt="" />
+			</div>
+			<div class="swiper-slide">
+				<img src="./img/products_cocoamuffin.jpg" alt="" />
+			</div>
+			<div class="swiper-slide">
+				<img src="./img/products_heartcookie.jpg" alt="" />
+			</div>
+			<div class="swiper-slide">
+				<img src="./img/products_butterfigcake.JPG" alt="" />
+			</div>
+		</div>
+	</div>
 
-    <section class="features" id="features">
-      <div class="feature__title title wow fadeInUp">
-        <span class="feature__title-en title-en">Features</span>
-        <span class="feature__title-ja title-ja">ー こだわり ー</span>
-      </div>
-      <div class="features__inner inner">
-        <div class="feature">
-          <div class="feature__number">1</div>
-          <h3 class="feature__heading">国産小麦</h3>
-          <img
-            src="img/feature_wheat.png"
-            alt="国産小麦"
-            class="feature__image"
-          />
-          <p class="feature__desc">
-            可能な限り、国産の原材料を使用しています。
-            サプライチェーンの透明性を大切にし、日本の持続可能な農業を応援したいという想いからです。
-          </p>
-        </div>
+	<section class="features" id="features">
+		<div class="feature__title title wow fadeInUp">
+			<span class="feature__title-en title-en">Features</span>
+			<span class="feature__title-ja title-ja">ー こだわり ー</span>
+		</div>
+		<div class="features__inner inner">
+			<div class="feature">
+				<div class="feature__number">1</div>
+				<h3 class="feature__heading">国産小麦</h3>
+				<img src="img/feature_wheat.png" alt="国産小麦" class="feature__image" />
+				<p class="feature__desc">
+					可能な限り、国産の原材料を使用しています。
+					サプライチェーンの透明性を大切にし、日本の持続可能な農業を応援したいという想いからです。
+				</p>
+			</div>
 
-        <div class="feature">
-          <div class="feature__number">2</div>
-          <h3 class="feature__heading">こめ油</h3>
-          <img src="img/feature_oil.png" alt="こめ油" class="feature__image" />
-          <p class="feature__desc">
-            国産のこめ油を使用しています。他の油と比較して酸化しにくいため、体にやさしく、美味しさが長持ちします。
-          </p>
-        </div>
+			<div class="feature">
+				<div class="feature__number">2</div>
+				<h3 class="feature__heading">こめ油</h3>
+				<img src="img/feature_oil.png" alt="こめ油" class="feature__image" />
+				<p class="feature__desc">
+					国産のこめ油を使用しています。他の油と比較して酸化しにくいため、体にやさしく、美味しさが長持ちします。
+				</p>
+			</div>
 
-        <div class="feature">
-          <div class="feature__number">3</div>
-          <h3 class="feature__heading">てんさい糖</h3>
-          <img
-            src="img/feature_sugar.png"
-            alt="てんさい糖"
-            class="feature__image"
-          />
-          <p class="feature__desc">
-            精製された白砂糖ではなく、北海道産のてんさい糖を使用しています。甘さを控えめにすることで、素材本来の風味を大切にしたお菓子に仕上げています。
-          </p>
-        </div>
-      </div>
-    </section>
+			<div class="feature">
+				<div class="feature__number">3</div>
+				<h3 class="feature__heading">てんさい糖</h3>
+				<img src="img/feature_sugar.png" alt="てんさい糖" class="feature__image" />
+				<p class="feature__desc">
+					精製された白砂糖ではなく、北海道産のてんさい糖を使用しています。甘さを控えめにすることで、素材本来の風味を大切にしたお菓子に仕上げています。
+				</p>
+			</div>
+		</div>
+	</section>
 
-    <section id="menu" class="menu">
-      <div class="menu__inner inner">
-        <div class="menu__title title wow fadeInUp">
-          <span class="menu__title-en title-en">Menu</span>
-          <span class="menu__title-ja title-ja">ー 今週のメニュー ー</span>
-        </div>
-        <div class="menu__boxes">
-          <div class="menu__box1 wow fadeInUp">
-            <div class="menu__box-img">
-              <img src="./img/menu_img1.jpg" alt="" />
-            </div>
-            <div class="menu__box-name">Example</div>
-          </div>
-          <div class="menu__box2 wow fadeInUp">
-            <div class="menu__box-img">
-              <img src="./img/menu_img2.jpg" alt="" />
-            </div>
-            <div class="menu__box-name">Example</div>
-          </div>
-        </div>
-      </div>
-    </section>
+	<section id="menu" class="menu">
+		<div class="menu__inner inner">
+			<div class="menu__title title wow fadeInUp">
+				<span class="menu__title-en title-en">Menu</span>
+				<span class="menu__title-ja title-ja">ー メニュー例 ー</span>
+			</div>
+			<div class="menu__pdf"><a href="document/0524 メニュー.pdf" target="_blank" rel="noopener noreferrer">
+					5/24のカフェメニューを見る（PDF）
+				</a></div>
 
-    <section id="contact" class="contact wow fadeInUp">
-      <div class="contact__inner">
-        <div class="contact__title title-en">Contact</div>
-        <div class="contact__text">お問い合わせはInstagram DMから</div>
-        <a
-          class="contact__button button"
-          href="https://www.instagram.com/chez_nagisa?igsh=dTgweWg3a3A5dDY4"
-          >Instagram<span class="sns__logo"></span
-        ></a>
-      </div>
-    </section>
 
-    <footer class="footer" id="footer">
-      <div class="footer__inner inner">
-        <div class="footer__logo">Chez Nagisa</div>
-        <div class="footer__detail">
-          <div class="footer__texts">
-            <div class="time__title">スケジュール</div>
-            <p class="footer__text">5月3日　間借りカフェ@東京駅</p>
-            <p class="footer__text">
-              5月10日　招待制スペシャルティーパーティー
-            </p>
-            <p class="footer__text">5月17日　青空カフェ@新宿中央公園</p>
-            <p class="footer__text">5月24日　間借りカフェ@南浦和駅</p>
-            <p class="footer__text">5月31日　青空カフェ@新宿中央公園（予定）</p>
-          </div>
-        </div>
-        <div class="footer__copyright">
-          <small class="footer__tcopyright-text">&copy;Chez Nagisa</small>
-        </div>
-      </div>
-    </footer>
+			<div class="menu__boxes">
+				<div class="menu__box1 wow fadeInUp">
+					<div class="menu__box-img">
+						<img src="./img/menu_img1.jpg" alt="" />
+					</div>
+					<div class="menu__box-name">Carrot Cake</div>
+				</div>
+				<div class="menu__box2 wow fadeInUp">
+					<div class="menu__box-img">
+						<img src="./img/menu_img2.jpg" alt="" />
+					</div>
+					<div class="menu__box-name">Signature Drinks</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./js/script.js"></script>
-    <script src="./js/lib/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
-    <script src="./js/lib/swiper-bundle.min.js"></script>
-  </body>
+	<section id="contact" class="contact wow fadeInUp">
+		<div class="contact__inner">
+			<div class="contact__title title-en">Contact</div>
+			<div class="contact__text">お問い合わせはInstagram DMから</div>
+			<a class="contact__button button"
+				href="https://www.instagram.com/chez_nagisa?igsh=dTgweWg3a3A5dDY4">Instagram<span
+					class="sns__logo"></span></a>
+		</div>
+	</section>
+
+	<footer class="footer" id="footer">
+		<div class="footer__inner inner">
+			<div class="footer__logo">Chez Nagisa</div>
+			<div class="footer__texts">
+				<div class="time__title">スケジュール</div>
+				<p class="footer__text">5月3日　間借りカフェ@東京駅</p>
+				<p class="footer__text">
+					5月10日　招待制スペシャルティーパーティー
+				</p>
+				<p class="footer__text">5月17日　青空カフェ@新宿中央公園</p>
+				<p class="footer__text">5月24日　間借りカフェ@南浦和駅</p>
+				<p class="footer__text">5月31日　青空カフェ@新宿中央公園（予定）</p>
+			</div>
+			<div class="footer__copyright">
+				<small class="footer__tcopyright-text">&copy;Chez Nagisa</small>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="./js/script.js"></script>
+	<script src="./js/lib/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<script src="./js/lib/swiper-bundle.min.js"></script>
+</body>
+
 </html>
